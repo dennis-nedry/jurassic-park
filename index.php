@@ -1,3 +1,12 @@
+<?php
+
+if( !strstr($_SERVER['HTTP_USER_AGENT'],'iPhone') && !strstr($_SERVER['HTTP_USER_AGENT'],'Android') ) 
+{
+    include('mobilerequired.php');
+    exit();
+}
+
+?>
 <!DOCTYPE html><!--HTML5 doctype-->
 <html>
 <head>
